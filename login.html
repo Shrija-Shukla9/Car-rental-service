@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Rental System</h1>
+        <form id="rental-form">
+            <label for="car-select">Choose a car:</label>
+            <select id="car-select" required>
+                <option value="">Select a car</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="hatchback">Hatchback</option>
+            </select>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" required>
+
+            <button type="submit">Rent Car</button>
+        </form>
+        <div id="confirmation"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
